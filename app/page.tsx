@@ -310,6 +310,14 @@ export default function Home() {
           .step,.step:first-child,.step:last-child{border-radius:24px}
           .step:after{display:none}
           .flow{grid-template-columns:repeat(2,1fr)}
+          .groupGrid,
+          .groupVisual {
+            grid-template-columns: 1fr;
+          }
+          
+          .groupItems {
+            grid-template-columns: 1fr;
+          }
         }
         @media(max-width:600px){
           .section{padding:68px 0}
