@@ -236,6 +236,70 @@ export default function Home() {
         .cta h2{color:white;font-size:clamp(42px,6vw,72px)}
         .cta p{font-size:18px;font-weight:700;margin-bottom:28px}
         .cta a{display:inline-flex;padding:14px 34px;background:white;color:#062b63;border-radius:999px;font-weight:950;text-decoration:none}
+        .group {
+  background: #fff;
+}
+
+.groupGrid {
+  display: grid;
+  grid-template-columns: .95fr 1.05fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.groupText {
+  background: #f5f8fc;
+  border: 1px solid #dfe8f2;
+  border-radius: 28px;
+  padding: 38px;
+  box-shadow: 0 18px 42px rgba(10,35,75,.08);
+}
+
+.groupText p {
+  color: #5a687a;
+  font-weight: 650;
+}
+
+.groupItems {
+  margin-top: 28px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.groupItems div {
+  background: #fff;
+  border: 1px solid #dfe8f2;
+  border-radius: 999px;
+  padding: 12px 16px;
+  color: #062b63;
+  font-weight: 900;
+  text-align: center;
+}
+
+.groupVisual {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.groupVisual div {
+  min-height: 180px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: white;
+  font-weight: 900;
+  border-radius: 22px;
+  background: linear-gradient(135deg, rgba(6,43,99,.86), rgba(11,101,185,.56)), #cbd5e1;
+  box-shadow: 0 18px 42px rgba(10,35,75,.12);
+  transition: .35s;
+}
+
+.groupVisual div:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 28px 58px rgba(10,35,75,.18);
+}
 
         .heroText,.glass,.introGrid,.whyGrid,.card,.step{animation:fadeUp .8s ease both}
         @keyframes fadeUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
