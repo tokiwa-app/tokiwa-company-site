@@ -139,7 +139,39 @@ export default function Home() {
           </div>
         </div>
       </section>
+<section className="section group">
+  <div className="container groupGrid">
+    <div className="groupText">
+      <p className="eyebrow">FUTABA GROUP</p>
+      <h2>双葉グループの総合力で、物流の枠を超える。</h2>
+      <p>
+        常盤運輸の物流・流通加工機能に加え、双葉グループのネットワークを活かすことで、展示会や販促活動に関する幅広いサポートも可能です。
+      </p>
 
+      <div className="groupItems">
+        {[
+          "ブースデザイン",
+          "展示什器設計",
+          "展示什器製作",
+          "会場設営・施工",
+          "搬入・搬出",
+          "資材保管・管理",
+        ].map((item) => (
+          <div key={item}>{item}</div>
+        ))}
+      </div>
+    </div>
+
+    <div className="groupVisual">
+      <div>FCG展示会写真<br />images/exhibition-booth.jpg</div>
+      <div>什器・サイン写真<br />images/sign-fixture.jpg</div>
+      <div>搬入出写真<br />images/carry-in.jpg</div>
+      <div>保管・管理写真<br />images/storage.jpg</div>
+    </div>
+  </div>
+</section>
+
+      
       <section className="cta">
         <div className="container">
           <h2>物流のその先へ。</h2>
